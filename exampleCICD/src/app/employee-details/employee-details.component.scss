@@ -1,0 +1,87 @@
+.employee-card {
+  width: min(500px, 100%);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(22, 29, 37, 0.12);
+  padding: 1.5rem;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+h1 {
+  margin: 0;
+  color: #1f2a37;
+}
+
+.edit-btn {
+  border: 1px solid #1d4ed8;
+  background: #1d4ed8;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.edit-btn:hover {
+  background: #1e40af;
+  border-color: #1e40af;
+}
+
+.save-btn {
+  background: #047857;
+  border-color: #047857;
+}
+
+.save-btn:hover {
+  background: #065f46;
+  border-color: #065f46;
+}
+
+.cancel-btn {
+  background: #fff;
+  border-color: #9ca3af;
+  color: #111827;
+}
+
+.cancel-btn:hover {
+  background: #f3f4f6;
+  border-color: #6b7280;
+}
+
+.employee-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid #e6ebf2;
+  padding: 0.75rem 0;
+}
+
+.label {
+  color: #52606d;
+  font-weight: 600;
+}
+
+.value {
+  color: #101828;
+  text-align: right;
+}
+
+.input {
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 0.35rem 0.5rem;
+  min-width: 220px;
+  text-align: right;
+}

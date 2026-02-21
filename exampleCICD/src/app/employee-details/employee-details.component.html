@@ -1,0 +1,40 @@
+<section class="employee-card" aria-label="Employee profile">
+  <div class="header-row">
+    <h1>Employee Profile</h1>
+    <div class="actions">
+      <button *ngIf="!isEditing" type="button" class="edit-btn" (click)="onEdit()">Edit</button>
+      <button *ngIf="isEditing" type="button" class="edit-btn save-btn" (click)="onSave()">Save</button>
+      <button *ngIf="isEditing" type="button" class="edit-btn cancel-btn" (click)="onCancel()">Cancel</button>
+    </div>
+  </div>
+
+  <div class="employee-row">
+    <span class="label">Name</span>
+    <span *ngIf="!isEditing" class="value">{{ employee.name }}</span>
+    <input *ngIf="isEditing" class="input" [(ngModel)]="draftEmployee.name" />
+  </div>
+
+  <div class="employee-row">
+    <span class="label">Employee ID</span>
+    <span *ngIf="!isEditing" class="value">{{ employee.employeeId }}</span>
+    <input *ngIf="isEditing" class="input" [(ngModel)]="draftEmployee.employeeId" />
+  </div>
+
+  <div class="employee-row">
+    <span class="label">Department</span>
+    <span *ngIf="!isEditing" class="value">{{ employee.department }}</span>
+    <input *ngIf="isEditing" class="input" [(ngModel)]="draftEmployee.department" />
+  </div>
+
+  <div class="employee-row">
+    <span class="label">Role</span>
+    <span *ngIf="!isEditing" class="value">{{ employee.role }}</span>
+    <input *ngIf="isEditing" class="input" [(ngModel)]="draftEmployee.role" />
+  </div>
+
+  <div class="employee-row">
+    <span class="label">Email</span>
+    <span *ngIf="!isEditing" class="value">{{ employee.email }}</span>
+    <input *ngIf="isEditing" class="input" [(ngModel)]="draftEmployee.email" />
+  </div>
+</section>
